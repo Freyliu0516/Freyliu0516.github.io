@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘丰瑞 | Fengrui Liu - ECNU CS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        .exp-card:hover { border-color: #3b82f6; transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold text-blue-600 tracking-tight">Frey Liu</span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#experience" class="hover:text-blue-600">Experience</a>
+                <a href="#research" class="hover:text-blue-600">Research</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="max-w-4xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1">
+            <h1 class="text-4xl font-extrabold tracking-tight mb-2">刘丰瑞 (Fengrui Liu)</h1>
+            <p class="text-blue-600 font-medium mb-6">ECNU CS Undergraduate | Researcher in AI & HCI</p>
+            <p class="text-slate-600 leading-relaxed mb-8">
+                我是华东师范大学计算机科学与技术学院的大二学生。目前专注于 **LLM 个性化对齐**、**社会计算** 以及 **AI for Science** 的交叉研究。致力于构建更具信任感与交互效率的智能系统。
+            </p>
+            <div class="flex gap-5">
+                <a href="YOUR_GOOGLE_SCHOLAR_URL" class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                    <i class="fas fa-graduation-cap"></i> Google Scholar
+                </a>
+                <a href="https://github.com/shitianmodi" class="flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-lg hover:bg-slate-100 transition">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:10245012480@stu.ecnu.edu.cn" class="flex items-center gap-2 border border-slate-200 px-4 py-2 rounded-lg hover:bg-slate-100 transition">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+        </div>
+        <div class="w-44 h-44 rounded-full bg-blue-100 border-4 border-white shadow-2xl flex items-center justify-center text-blue-400">
+            <i class="fas fa-user-astronaut fa-4x"></i>
+        </div>
+    </header>
+
+    <hr class="max-w-4xl mx-auto border-slate-100">
+
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-bold mb-12 flex items-center">
+            <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center mr-3 text-sm">01</span>
+            Research Experience
+        </h2>
+        
+        <div class="space-y-8">
+            <div class="exp-card p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="font-bold text-lg">上海智能教育研究院 (SiiE)</h3>
+                        <p class="text-sm text-slate-500 italic">负责人：周爱民 教授 | 导师：张敏 老师</p>
+                    </div>
+                    <span class="text-xs font-bold text-blue-500 bg-blue-50 px-2 py-1 rounded">2025 - Present</span>
+                </div>
+                <p class="text-slate-600 text-sm">专注于多模态大模型在教育领域的落地应用，探索自迭代系统架构与隐私保护机制。</p>
+            </div>
+
+            <div class="exp-card p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="font-bold text-lg">上海交通大学 (SJTU) 实验室</h3>
+                        <p class="text-sm text-slate-500 italic">负责人：傅小兰 教授 | 导师：刘峰 副教授</p>
+                    </div>
+                    <span class="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded">Intern</span>
+                </div>
+                <p class="text-slate-600 text-sm">参与跨学科认知研究，利用边缘云协同范式优化 AI 辅助心理治疗的交互流程。</p>
+            </div>
+
+            <div class="exp-card p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="font-bold text-lg">机器学习实验室</h3>
+                        <p class="text-sm text-slate-500 italic">导师：李江梦 副研究员</p>
+                    </div>
+                </div>
+                <p class="text-slate-600 text-sm">研究贝叶斯推断与生成式模型，深入探索随机采样框架（SMC/MCMC）在复杂分布下的鲁棒性。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="bg-slate-900 py-16 text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-2xl font-bold mb-4">Wanna see my publications?</h2>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto">我的最新研究进展、预印本及录用论文均实时同步至 Google Scholar。</p>
+            <a href="YOUR_GOOGLE_SCHOLAR_URL" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition shadow-lg shadow-blue-500/20">
+                <i class="fas fa-external-link-alt text-sm"></i> View My Google Scholar
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-xs tracking-widest uppercase">
+        &copy; 2026 Fengrui Liu | ECNU Computer Science
+    </footer>
+
+</body>
+</html>
