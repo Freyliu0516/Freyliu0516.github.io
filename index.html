@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
-        .exp-card:hover { border-color: #3b82f6; transition: all 0.3s ease; }
-        /* 增加链接的平滑过渡效果 */
+        .exp-card:hover { border-color: #3b82f6; transform: translateY(-2px); transition: all 0.3s ease; }
         a { transition: color 0.2s ease, background-color 0.2s ease; }
     </style>
 </head>
@@ -20,6 +19,7 @@
             <span class="text-xl font-bold text-blue-600 tracking-tight">Frey Liu</span>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
                 <a href="#about" class="hover:text-blue-600">About</a>
+                <a href="#education" class="hover:text-blue-600">Education</a>
                 <a href="#experience" class="hover:text-blue-600">Experience</a>
                 <a href="#research" class="hover:text-blue-600">Research</a>
             </div>
@@ -47,16 +47,34 @@
                 </a>
             </div>
         </div>
-        <div class="w-44 h-44 rounded-full bg-blue-100 border-4 border-white shadow-2xl flex items-center justify-center text-blue-400">
-            <i class="fas fa-user-astronaut fa-4x"></i>
+        <div class="w-44 h-44 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-slate-200">
+            <img src="LFR.jpg" alt="刘丰瑞" class="w-full h-full object-cover shadow-inner" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'flex items-center justify-center h-full text-slate-400\'><i class=\'fas fa-user-astronaut fa-4x\'></i></div>'">
         </div>
     </header>
 
     <hr class="max-w-4xl mx-auto border-slate-100">
 
-    <section id="experience" class="max-w-4xl mx-auto px-6 py-20">
+    <section id="education" class="max-w-4xl mx-auto px-6 py-20">
         <h2 class="text-2xl font-bold mb-12 flex items-center">
             <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center mr-3 text-sm">01</span>
+            Education
+        </h2>
+        <div class="bg-white p-6 border border-slate-100 rounded-2xl shadow-sm flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg">华东师范大学 (ECNU)</h3>
+                <p class="text-slate-600">计算机科学与技术专业 · 本科</p>
+                <p class="text-xs text-slate-400 mt-1">学号：10245102480</p>
+            </div>
+            <div class="text-right text-sm">
+                <span class="font-bold text-blue-500">2024 - Present</span>
+                <p class="text-slate-400 italic">上海, 中国</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-4xl mx-auto px-6 py-10">
+        <h2 class="text-2xl font-bold mb-12 flex items-center">
+            <span class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center mr-3 text-sm">02</span>
             Research Experience
         </h2>
         
@@ -64,12 +82,9 @@
             <div class="exp-card p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
                 <div class="flex justify-between items-start mb-4">
                     <div>
-                        <h3 class="font-bold text-lg">
-                            <a href="https://aiedu.ecnu.edu.cn/" target="_blank" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4">上海智能教育研究院 (SiiE)</a>
-                        </h3>
+                        <h3 class="font-bold text-lg text-blue-600">上海智能教育研究院 (SiiE)</h3>
                         <p class="text-sm text-slate-500 italic mt-1">
-                            负责人：<a href="https://faculty.ecnu.edu.cn/_s16/zam/main.psp" target="_blank" class="hover:text-blue-600 font-medium">周爱民 教授</a> | 
-                            导师：<a href="https://faculty.ecnu.edu.cn/_s16/zm2/main.psp" target="_blank" class="hover:text-blue-600 font-medium">张敏 副研究员</a>
+                            PI: 周爱民 教授 | Advisor: 张敏 副研究员
                         </p>
                     </div>
                     <span class="text-xs font-bold text-blue-500 bg-blue-50 px-2 py-1 rounded">2025 - Present</span>
@@ -80,39 +95,35 @@
             <div class="exp-card p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
                 <div class="flex justify-between items-start mb-4">
                     <div>
-                        <h3 class="font-bold text-lg">
-                            <a href="https://psychology.sjtu.edu.cn/" target="_blank" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4">上海交通大学 心理与行为科学研究院</a>
-                        </h3>
+                        <h3 class="font-bold text-lg text-blue-600">上海交通大学 心理与行为科学研究院</h3>
                         <p class="text-sm text-slate-500 italic mt-1">
-                            负责人：<a href="https://psychology.sjtu.edu.cn/tsml/91.html" target="_blank" class="hover:text-blue-600 font-medium">傅小兰 教授</a> | 
-                            导师：<a href="https://psychology.sjtu.edu.cn/tsml/332.html" target="_blank" class="hover:text-blue-600 font-medium">刘峰 副教授</a>
+                            PI: 傅小兰 教授 | Advisor: 刘峰 副教授
                         </p>
                     </div>
                     <span class="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded">Intern</span>
                 </div>
                 <p class="text-slate-600 text-sm">参与跨学科认知研究，利用边缘云协同范式优化 AI 辅助心理治疗的交互流程。</p>
             </div>
-
-            <div class="exp-card p-6 bg-white border border-slate-100 rounded-2xl shadow-sm">
-                <div class="flex justify-between items-start mb-4">
-                    <div>
-                        <h3 class="font-bold text-lg">
-                            <a href="https://is.cas.cn/" target="_blank" class="hover:text-blue-600 hover:underline decoration-blue-300 underline-offset-4">中科院软件所 (ISCAS) 天基综合信息系统全国重点实验室</a>
-                        </h3>
-                        <p class="text-sm text-slate-500 italic mt-1">
-                            导师：<a href="https://jiangmengli.github.io/" target="_blank" class="hover:text-blue-600 font-medium">李江梦 副研究员</a> | 机器学习课题组
-                        </p>
-                    </div>
-                </div>
-                <p class="text-slate-600 text-sm">研究 test-time adaptation 相关机制。<a href="#" class="text-blue-500 hover:text-blue-700 font-medium ml-1">[等待补充具体 Project 链接]</a></p>
-            </div>
         </div>
     </section>
 
-    <section id="research" class="bg-slate-900 py-16 text-white text-center">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-4">Wanna see my publications?</h2>
-            <p class="text-slate-400 mb-8 max-w-md mx-auto">我的最新研究进展、预印本及录用论文均实时同步至 Google Scholar。</p>
+
+    <section id="research" class="bg-slate-900 py-20 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-8">Selected Publications & Preprints</h2>
+            <div class="text-left max-w-2xl mx-auto mb-12 space-y-6">
+                <div class="border-l-2 border-blue-500 pl-4">
+                    <p class="font-medium">From Physics to Representation: Audio Learning with Synthetic Pre-training via Procedural Generation</p>
+                    <p class="text-xs text-slate-400 mt-1">F. Liu, et al. (ICMR accepted, 2026)</p>
+                </div>
+            </div>
+            <div class="text-left max-w-2xl mx-auto mb-12 space-y-6">
+                <div class="border-l-2 border-blue-500 pl-4">
+                    <p class="font-medium">The Emergence of Shared Norms in Decentralized Networks: A Social Computing Model of Lexical Coordination</p>
+                    <p class="text-xs text-slate-400 mt-1">F. Liu, et al. (ICSC accepted, 2025)</p>
+                </div>
+            </div>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto text-sm">我的最新研究进展及录用论文均实时同步至 Google Scholar。</p>
             <a href="https://scholar.google.com/citations?user=myIpXtsAAAAJ&hl=zh-CN" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition shadow-lg shadow-blue-500/20">
                 <i class="fas fa-external-link-alt text-sm"></i> View My Google Scholar
             </a>
