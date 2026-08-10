@@ -321,17 +321,14 @@
     .project p { margin: .35rem 0 0; color: var(--muted); }
     .honor-item { display: grid; grid-template-columns: 10.5rem minmax(0, 1fr); gap: 1.25rem; padding: .4rem 0; }
     .honor-year { color: var(--faint); font-size: .84rem; font-variant-numeric: tabular-nums; }
-    .skills { display: flex; flex-wrap: wrap; gap: .45rem; }
-    .skill {
-      display: inline-flex;
-      align-items: center;
-      min-height: 2rem;
-      padding: .25rem .62rem;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--muted);
-      font-size: .84rem;
-    }
+    .community-grid { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: 2.5rem; }
+    .community-block { border-top: 1px solid var(--border); padding-top: 1rem; }
+    .community-block h3 { margin: 0 0 .65rem; color: var(--text-strong); font-size: 1.05rem; }
+    .community-list { list-style: none; margin: 0; padding: 0; }
+    .community-list li { padding: .65rem 0; border-bottom: 1px solid var(--border); }
+    .community-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .community-title { display: block; color: var(--text-strong); font-weight: 600; line-height: 1.4; }
+    .community-meta { display: block; margin-top: .2rem; color: var(--faint); font-size: .84rem; line-height: 1.45; }
     .footer {
       border-top: 1px solid var(--border);
       padding-block: 2rem 3rem;
@@ -359,6 +356,7 @@
       .timeline-copy { padding-left: 0; }
       .record { gap: .15rem; }
       .publication { gap: .85rem; }
+      .community-grid { grid-template-columns: 1fr; gap: 1.75rem; }
       .teaser { max-width: 16rem; }
       .footer-inner { flex-direction: column; }
     }
@@ -380,6 +378,7 @@
           <a href="#experience">Experience</a>
           <a href="#publications">Publications</a>
           <a href="#projects">Projects</a>
+          <a href="#service">Service</a>
         </nav>
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
           <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2.2M12 19.8V22M4.93 4.93l1.56 1.56M17.51 17.51l1.56 1.56M2 12h2.2M19.8 12H22M4.93 19.07l1.56-1.56M17.51 6.49l1.56-1.56"/></svg>
@@ -541,16 +540,30 @@
       </ul>
     </section>
 
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading"><span class="section-index">07 / TOOLKIT</span><h2 class="section-title" id="skills-title">Skills</h2></div>
-      <div class="skills" aria-label="Technical skills">
-        <span class="skill">Python</span><span class="skill">PyTorch</span><span class="skill">C/C++</span><span class="skill">MATLAB</span><span class="skill">Linux</span><span class="skill">Git</span><span class="skill">Docker</span><span class="skill">Unity</span><span class="skill">WebGL</span><span class="skill">Torchaudio</span><span class="skill">Audio Representation Learning</span><span class="skill">LLM Alignment</span><span class="skill">Multi-Agent Workflows</span><span class="skill">Retrieval-Augmented Generation</span><span class="skill">Bayesian Inference</span><span class="skill">Monte Carlo Tree Search</span>
+    <section class="section" id="service" aria-labelledby="service-title">
+      <div class="section-heading"><span class="section-index">07 / COMMUNITY</span><h2 class="section-title" id="service-title">Academic Service &amp; Grants</h2></div>
+      <div class="community-grid">
+        <article class="community-block">
+          <h3>Academic Service</h3>
+          <ul class="community-list">
+            <li><span class="community-title">AAAI Conference on Artificial Intelligence</span><span class="community-meta">Program Committee Member &middot; AAAI 2026 and AAAI 2027</span></li>
+            <li><span class="community-title">IEEE/ACM Transactions on Audio, Speech, and Language Processing</span><span class="community-meta">Reviewer</span></li>
+          </ul>
+        </article>
+        <article class="community-block">
+          <h3>Research Grants</h3>
+          <ul class="community-list">
+            <li><span class="community-title">National Undergraduate Innovation Training Program</span><span class="community-meta">Project Lead &middot; ECNU Key-Supported Incubation Project &middot; 10 selected university-wide &middot; Completed with Distinction &middot; No. 2025PY-619</span></li>
+            <li><span class="community-title">Innovation Program, State Key Laboratory of Space-Ground Integrated Information Systems</span><span class="community-meta">Project Lead &middot; Institute of Software, Chinese Academy of Sciences &middot; Jan 2026 &ndash; Jul 2026</span></li>
+            <li><span class="community-title">ECNU Future Leading Talent Excellence Academic Program</span><span class="community-meta">Project Lead &middot; May 2026 &ndash; Present</span></li>
+          </ul>
+        </article>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="page footer-inner"><span>&copy; 2026 Fengrui Liu &middot; East China Normal University &middot; Updated August 2026</span><a href="#top">Back to top</a></div>
+    <div class="page footer-inner"><span>&copy; 2026 Fengrui Liu &middot; East China Normal University</span><a href="#top">Back to top</a></div>
   </footer>
 
   <script>
